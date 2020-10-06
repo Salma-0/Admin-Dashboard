@@ -4,7 +4,8 @@ import GeoChart from './GeoChart'
 
 const Charts = () => {
     return (
-        <div className='container'>
+        <div className='container p-2 text-center'>
+            <h2 className='mt-4'>Dashboard</h2>
             <RevenueChart/>
             <p className='mb-5'>The chart above shows the revenue made by the store in September 2020</p>
             <GeoChart/>

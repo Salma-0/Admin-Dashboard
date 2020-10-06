@@ -34,8 +34,6 @@ const Sidebar = ({children}) => {
                 <Link className={activeLink === '/products' ? 'active' : ''} onClick={e => setActiveLink('/products')} to="/products">Products <FontAwesomeIcon style={style} icon={faShoppingBasket}/></Link>
                 <Link className={activeLink === 'orders' ? 'active' : ''} onClick={e => setActiveLink('/orders')} to="/orders">Orders <FontAwesomeIcon style={style} icon={faListAlt}/></Link>
                 <Link className={activeLink === '/coupons' ? 'active': ''} onClick={e => setActiveLink('/coupons')} to="/coupons">Coupons <FontAwesomeIcon style={style} icon={faTicketAlt}/></Link>
-                <Link className={activeLink === '/contact' ? 'active' : ''} onClick={e => setActiveLink('/contact')} to="/contact">Contact</Link>
-                <Link className={activeLink === '/about' ? 'active' : ''} onClick={e => setActiveLink('/about')} to="/about">About</Link>
             </div>
             <div className='content' style={{marginLeft: !visible ? 40 : 200}}>
                 {children}

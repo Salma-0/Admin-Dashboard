@@ -17,9 +17,7 @@ import Coupons from './components/coupons/Coupons'
 
 
 
-const About = () => <div>About Page</div>;
 
-const Contact = () => <div>Contact Page</div>
 
 function App() {
   
@@ -29,8 +27,6 @@ function App() {
         <Switch>
           <Route exact path="/" render={()=> <Sidebar><Charts/></Sidebar>}/>
           <Route exact path="/coupons" render={()=> <Sidebar><Coupons/></Sidebar>}/>
-          <Route exact path="/about" render={()=> <Sidebar><About/></Sidebar>}/>
-          <Route exact path="/contact" render={()=> <Sidebar><Contact/></Sidebar>}/>
           <Route exact path="/orders" render={()=> <Sidebar><Orders/></Sidebar>}/>
           <Route exact path="/products" render={()=> <Sidebar><ProductsList/></Sidebar>}/>
         </Switch>
