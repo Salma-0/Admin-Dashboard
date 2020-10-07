@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Admin-Dashboard/static/css/main.7f38d273.chunk.css",
-    "main.js": "/Admin-Dashboard/static/js/main.0339ffa4.chunk.js",
-    "main.js.map": "/Admin-Dashboard/static/js/main.0339ffa4.chunk.js.map",
+    "main.js": "/Admin-Dashboard/static/js/main.deca948d.chunk.js",
+    "main.js.map": "/Admin-Dashboard/static/js/main.deca948d.chunk.js.map",
     "runtime-main.js": "/Admin-Dashboard/static/js/runtime-main.387914b6.js",
     "runtime-main.js.map": "/Admin-Dashboard/static/js/runtime-main.387914b6.js.map",
     "xlsx.js": "/Admin-Dashboard/static/js/xlsx.f637f1a2.chunk.js",
     "xlsx.js.map": "/Admin-Dashboard/static/js/xlsx.f637f1a2.chunk.js.map",
     "static/css/3.d9ad5f5c.chunk.css": "/Admin-Dashboard/static/css/3.d9ad5f5c.chunk.css",
-    "static/js/3.bec6745a.chunk.js": "/Admin-Dashboard/static/js/3.bec6745a.chunk.js",
-    "static/js/3.bec6745a.chunk.js.map": "/Admin-Dashboard/static/js/3.bec6745a.chunk.js.map",
+    "static/js/3.c4852848.chunk.js": "/Admin-Dashboard/static/js/3.c4852848.chunk.js",
+    "static/js/3.c4852848.chunk.js.map": "/Admin-Dashboard/static/js/3.c4852848.chunk.js.map",
     "static/js/4.a3cfb71f.chunk.js": "/Admin-Dashboard/static/js/4.a3cfb71f.chunk.js",
     "static/js/4.a3cfb71f.chunk.js.map": "/Admin-Dashboard/static/js/4.a3cfb71f.chunk.js.map",
     "static/js/5.5fae2e39.chunk.js": "/Admin-Dashboard/static/js/5.5fae2e39.chunk.js",
@@ -17,19 +17,19 @@
     "static/js/6.eb29e38f.chunk.js": "/Admin-Dashboard/static/js/6.eb29e38f.chunk.js",
     "static/js/6.eb29e38f.chunk.js.map": "/Admin-Dashboard/static/js/6.eb29e38f.chunk.js.map",
     "index.html": "/Admin-Dashboard/index.html",
-    "precache-manifest.3d05636dd95722f4bdb1a518c6a19b2f.js": "/Admin-Dashboard/precache-manifest.3d05636dd95722f4bdb1a518c6a19b2f.js",
+    "precache-manifest.2da5aee98845432de47520cef51cb6dc.js": "/Admin-Dashboard/precache-manifest.2da5aee98845432de47520cef51cb6dc.js",
     "service-worker.js": "/Admin-Dashboard/service-worker.js",
     "static/css/3.d9ad5f5c.chunk.css.map": "/Admin-Dashboard/static/css/3.d9ad5f5c.chunk.css.map",
     "static/css/main.7f38d273.chunk.css.map": "/Admin-Dashboard/static/css/main.7f38d273.chunk.css.map",
-    "static/js/3.bec6745a.chunk.js.LICENSE.txt": "/Admin-Dashboard/static/js/3.bec6745a.chunk.js.LICENSE.txt",
+    "static/js/3.c4852848.chunk.js.LICENSE.txt": "/Admin-Dashboard/static/js/3.c4852848.chunk.js.LICENSE.txt",
     "static/js/5.5fae2e39.chunk.js.LICENSE.txt": "/Admin-Dashboard/static/js/5.5fae2e39.chunk.js.LICENSE.txt",
     "static/js/6.eb29e38f.chunk.js.LICENSE.txt": "/Admin-Dashboard/static/js/6.eb29e38f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.387914b6.js",
     "static/css/3.d9ad5f5c.chunk.css",
-    "static/js/3.bec6745a.chunk.js",
+    "static/js/3.c4852848.chunk.js",
     "static/css/main.7f38d273.chunk.css",
-    "static/js/main.0339ffa4.chunk.js"
+    "static/js/main.deca948d.chunk.js"
   ]
 }
