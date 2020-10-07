@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://salma-0.github.io/Admin-Dashboard",
+  "homepage": "http://salma-0.github.io/Admin-Dashboard",
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.5",
     "@amcharts/amcharts4-geodata": "^4.1.17",

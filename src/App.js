@@ -14,6 +14,7 @@ import Orders from './components/orders/Orders';
 import ProductsList from './components/products/ProductsList';
 import Charts from './components/charts/Charts';
 import Coupons from './components/coupons/Coupons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -23,7 +24,7 @@ function App() {
   
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" render={()=> <Sidebar><Charts/></Sidebar>}/>
           <Route exact path="/coupons" render={()=> <Sidebar><Coupons/></Sidebar>}/>
