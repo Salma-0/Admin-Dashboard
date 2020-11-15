@@ -19,11 +19,13 @@ import Coupons from './components/coupons/Coupons'
 import SettingsContext from './components/context/Settings'
 import languageJSON from './utils/language.json'
 
+localStorage.setItem('lang', 'en');
+
 
 function App() {
 
    const [settings, setSettings] = useState({
-     lang: 'en'
+     lang: localStorage.getItem('lang')
    })
 
   const changeLang = lang => {
