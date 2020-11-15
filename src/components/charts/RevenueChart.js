@@ -1,12 +1,15 @@
-import React,{useRef, useLayoutEffect} from 'react'
+import React,{useRef, useLayoutEffect, useContext} from 'react'
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
+import SettingsContext from '../context/Settings'
 
 import getRevenueData from './revenue';
 
 
 
 const RevenueChart = () => {
+
+    const {getStr} = useContext(SettingsContext)
 
     let chart = useRef(null);
 
@@ -24,7 +27,7 @@ const RevenueChart = () => {
 
         let valueAxis = x.yAxes.push(new am4charts.ValueAxis());
 
-        valueAxis.title.text = "Revenue $"
+        valueAxis.title.text = getStr('revenue')+" $"
 
         let series = x.series.push(new am4charts.ColumnSeries());
         series.dataFields.valueY = "value";
@@ -35,7 +38,7 @@ const RevenueChart = () => {
         x.scrollbarX.series.push(series);
 
         let title = x.titles.create();
-        title.text = "Sales Growth"
+        title.text = getStr('sales_growth')
         title.fontSize = 20
 
         chart.current = x;
@@ -44,7 +47,7 @@ const RevenueChart = () => {
             x.dispose();
         }
 
-    }, [])
+    }, [getStr])
 
     return (
         <div id="chartdiv" className='col' style={{height: 400, width: '100%', margin: 20}}>

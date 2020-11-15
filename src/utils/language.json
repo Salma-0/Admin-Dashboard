@@ -1,0 +1,118 @@
+{
+    "home": {
+        "en": "Home",
+        "ar": "الرئيسية"
+    },
+    "dashboard": {
+        "en": "Dashboard",
+        "ar": "لوحة التحكم"
+    },
+    "orders": {
+        "en": "Orders",
+        "ar": "الطلبات" 
+    },
+    "products": {
+        "en": "Products",
+        "ar": "المنتجات"
+    },
+    "coupons": {
+        "en": "Coupons", 
+        "ar": "القسائم"
+    }, 
+    "sales_growth": {
+        "en": "Sales Growth", 
+        "ar": "نمو المبيعات"
+    },
+    "revenue": {
+        "en": "Revenue", 
+        "ar": "العائدات"
+    },
+    "revenue_graph_desc": {
+        "en": "The chart above shows the revenue made by the store in September 2020",
+        "ar": "الرسم أعلاه يبين الربح الذي حققه المتجر خلال شهر سبتمبر"
+    },
+    "sales_by_country": {
+        "en": "Sales By Country",
+        "ar": "المبيعات حسب البلد"
+    },
+    "sales_by_country_desc": {
+        "en": "The second chart depicts the sales around the world. each point represent the number of orders made in each country. To view the number of orders made in one country you need to hover or click on the country in the map.",
+        "ar": "الرسم الثاني يبين المبيعات حول العالم، حيث كل نقطة تبين عدد الطلبات عند الضغط عليها"
+    },
+    "view_more": {
+        "en": "view more",
+        "ar": "المزيد"
+    },
+    "best_sellers": {
+        "en": "Best Sellers",
+        "ar": "الأكثر مبيعًا"
+    },
+    "women_clothing": {
+        "en": "Women Clothing",
+        "ar": "الملابس النسائية"
+    },
+    "men_clothing": {
+        "en": "Men Clothing",
+        "ar": "الملابس الرجالية"
+    },
+    "jewelery": {
+        "en": "Jewelery",
+        "ar": "المجوهرات"
+    },
+    "electronics": {
+        "en": "Electronics",
+        "ar": "الإلكترونيات"
+    },
+    "ordered_at": {
+        "en": "Ordered at",
+        "ar": "وقت الطلب"
+    },
+    "total": {
+        "en": "Total",
+        "ar": "المجموع"
+    },
+    "items": {
+        "en": "items",
+        "ar": "قطع"
+    }, 
+    "create_coupon_btn": {
+        "en": "Create New Coupon",
+        "ar": "قسيمة جديدة"
+    },
+    "discount": {
+        "en": "Discount Coupon",
+        "ar": "تخفيض"
+    },
+    "valid": {
+        "en": "Valid",
+        "ar": "صالح للاستخدام"
+    },
+    "invalid": {
+        "en": "Invalid",
+        "ar": "غير صالح"
+    },
+    "valid_until": {
+        "en": "valid until", 
+        "ar": "صالح حتى"
+    },
+    "used_by": {
+        "en": "Used by", 
+        "ar": "استخدم من قبل"
+    },
+    "users": {
+        "en": "users", 
+        "ar": "مستخدم/ين"
+    },
+    "limit": {
+        "en": "Limit", 
+        "ar": "حد الاستخدام"
+    },
+    "discount_percentage": {
+        "en": "Discount", 
+        "ar": "نسبة الخصم"
+    },
+    "create_btn": {
+        "en": "Create", 
+        "ar": "إضافة"
+    }
+}

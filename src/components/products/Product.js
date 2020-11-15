@@ -1,5 +1,6 @@
-import React,{useState} from 'react'
+import React,{useState, useContext} from 'react'
 import Collapsible from '../layout/Collapsible';
+import SettingsContext from '../context/Settings'
 
 
 const styles = {
@@ -9,7 +10,9 @@ const styles = {
     }
 }
 
+
 const Product = ({product: {id, title, image, price, description, category}}) => {
+    const {getStr} = useContext(SettingsContext);
     const [open ,setOpen] = useState(false)
     return (
         <div className='d-flex flex-row p-3 mb-2 border'>
@@ -17,7 +20,7 @@ const Product = ({product: {id, title, image, price, description, category}}) =>
             <div className='p-2 ml-2'>
                 <p>{title}</p>
                 <p>${price}</p>
-                <button className='btn btn-outline-info' onClick={e => setOpen(!open)}>view more</button>
+                <button className='btn btn-outline-info' onClick={e => setOpen(!open)}>{getStr('view_more')}</button>
                 <Collapsible open={open}>
                     <p className='mt-1'><strong>Description: </strong> {description}</p>
                     <p><strong>Category: </strong> {category}</p>

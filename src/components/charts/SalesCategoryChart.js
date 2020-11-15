@@ -1,10 +1,13 @@
-import React, {useRef, useLayoutEffect} from 'react'
+import React, {useRef, useLayoutEffect, useContext} from 'react'
 import getData from './salesPerCategory';
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
+import SettingsContext from '../context/Settings'
 
 
 const SalesCategoryChart = () => {
+
+    const {getStr} = useContext(SettingsContext)
     let chart1 = useRef(null);
 
     useLayoutEffect(()=> {
@@ -23,14 +26,14 @@ const SalesCategoryChart = () => {
             
 
             let title = x.titles.create()
-            title.text = "Best Sellers"
+            title.text = getStr('best_sellers')
             title.fontSize = 20
             title.marginBottom = 20
             x.marginTop = 50
         })
           chart1.current = x;
 
-    }, [])
+    }, [getStr])
 
     return (
         <div id="chartdiv2" className='col' style={{height: 300, width: '100%', marginTop: 40}}>

@@ -1,13 +1,16 @@
-import React, {useRef, useLayoutEffect} from 'react'
+import React, {useRef, useLayoutEffect, useContext} from 'react'
 import * as am4core from '@amcharts/amcharts4/core'
 import * as am4maps from '@amcharts/amcharts4/maps';
 import am4geodata_continentsLow from '@amcharts/amcharts4-geodata/continentsLow';
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import getGeoData from './geoData';
+import SettingsContext from '../context/Settings'
 
 const GeoChart = () => {
 
     let chart = useRef(null)
+
+    const {getStr} = useContext(SettingsContext)
 
     useLayoutEffect(() => {
 
@@ -24,7 +27,7 @@ const GeoChart = () => {
         }
 
         let label = x.createChild(am4core.Label)
-        label.text = "Sales by country";
+        label.text = getStr('sales_by_country');
         label.fontSize = 16;
         label.align = "left"
         label.valign = "bottom"
@@ -180,7 +183,7 @@ const GeoChart = () => {
             x.dispose()
         }
 
-    }, [])
+    }, [getStr])
 
     return (
         <div id="chartdiv3" className='col' style={{width: '100%', height: 300}}>

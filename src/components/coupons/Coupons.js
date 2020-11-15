@@ -1,7 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTrash, faTicketAlt} from '@fortawesome/free-solid-svg-icons'
 import Collapsible from '../layout/Collapsible';
+import SettingsContext from '../context/Settings'
 
 let fakeCoupons = [
     {
@@ -35,6 +36,9 @@ let fakeCoupons = [
 ]
 
 const Coupons = () => {
+
+    const {getStr, lang} = useContext(SettingsContext)
+    const locale = lang === 'ar' ? 'ar-EG' : undefined
 
     const [open, setOpen] = useState(false);
     const [msg, setMsg] = useState(null);
@@ -116,9 +120,9 @@ const Coupons = () => {
     
     return (
         <div className='container text-center'>
-            <h1 className='mb-4 m-2'>Coupons</h1>
+            <h1 className='mb-4 m-2'>{getStr('coupons')}</h1>
             <div className='row'>
-                <button className='btn btn-outline-primary m-3' onClick={e => setOpen(!open)}>Create New Coupon </button>
+                <button className='btn btn-outline-primary m-3' onClick={e => setOpen(!open)}>{getStr('create_coupon_btn')}</button>
             </div>
             <div className='row'>
                 <Collapsible open={open}>
@@ -126,18 +130,18 @@ const Coupons = () => {
                      {msg && <div className={`alert alert-${msg.type}`}>{msg.msg}</div>}
 
                         <div className='form-group'>
-                            <label>Discount: </label>
+                            <label>{getStr('discount_percentage')}: </label>
                             <input className='form-control' type='number' name='discount' value={formData.discount} onChange={e => onChange(e)} min="1" max="100" required />
                         </div>
                         <div className='form-group'>
-                            <label>Valid Until:</label>
+                            <label>{getStr('valid_until')}</label>
                             <input className='form-control' type="date" name="validUntil" value={formData.validUntil} onChange={e => onChange(e)} />
                         </div>
                         <div className='form-group'>
-                            <label>Limit:</label>
+                            <label>{getStr('limit')}:</label>
                             <input className='form-control' type="number" name="limit" value={formData.limit} onChange={e => onChange(e)} />
                         </div>
-                        <button type='submit' className='btn btn-light'>Create <FontAwesomeIcon icon={faTicketAlt}/></button>
+                        <button type='submit' className='btn btn-light'>{getStr('create_btn')} <FontAwesomeIcon icon={faTicketAlt}/></button>
                     </form>
                 </Collapsible>
             </div>
@@ -147,13 +151,13 @@ const Coupons = () => {
                        
                         <div className='card-body row text-left'>
                             <div className='col'>
-                                <h5 style={{ color: '#731e15' }}>{coupon.discount}% Discount Coupon</h5>
-                                <p>valid until: <strong>{coupon.validUntil.toDateString()}</strong></p>
-                                <p>Used by {coupon.usage} users</p>
-                                <p>Limit: {coupon.limit}</p>
+                <h5 style={{ color: '#731e15' }}>{coupon.discount}% {getStr('discount')}</h5>
+                                <p>{getStr('valid_until')} <strong>{coupon.validUntil.toLocaleDateString(locale)}</strong></p>
+                                <p>{getStr('used_by')} {coupon.usage} {getStr('users')}</p>
+                                <p>{getStr('limit')} {coupon.limit}</p>
                             </div>
                             <div className='col-5 d-flex flex-column text-center'>
-                                <span className={`rounded p-1 mb-2 text-light ${isValid(coupon) ? 'bg-success': 'bg-danger'}`}>{isValid(coupon) ? 'VALID' : 'INVALID'}</span>
+                                <span className={`rounded p-1 mb-2 text-light ${isValid(coupon) ? 'bg-success': 'bg-danger'}`}>{isValid(coupon) ? getStr('valid') : getStr('invalid')}</span>
                                 <button onClick={e => onDelete(e, coupon.id)} className='btn btn-outline-dark p-1 float-right'><span><FontAwesomeIcon icon={faTrash} /></span></button>
                             </div>
                         </div>
